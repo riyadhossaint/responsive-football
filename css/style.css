@@ -13,7 +13,10 @@ header{
     width: 1440px;
     margin-bottom: 70px;
 }
-
+header:hover img{
+    transform: rotate(60deg);
+    transition: transform  1s .1;
+}
 nav{
     display: flex;
     justify-content: space-between;
