@@ -1,7 +1,8 @@
-/* font */
+/*---------font--------
+---------------------- */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
 
-/* common styles */
+/*------- common styles---------- */
 body{
     font-family: 'Poppins', sans-serif;
     margin: 0;
@@ -17,6 +18,8 @@ header:hover img{
     transform: rotate(60deg);
     transition: transform  1s .1;
 }
+
+/*-------- navigation styles -------- */
 nav{
     display: flex;
     justify-content: space-between;
@@ -39,6 +42,12 @@ nav ul li{
     margin-right: 184px;
     margin-top: 42px;
 }
+
+.fa-sign-in-alt{
+    margin-right: 10px;
+}
+
+/*--------- top banner styles ------------ */
 .top-banner{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -64,7 +73,9 @@ span{
     margin-right: 141px;
 }
 
-main, .footer-detail{
+/* --------- main section styles ----- */
+
+main{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -72,7 +83,7 @@ main, .footer-detail{
 }
  
 
-   /* players styles  */
+   /*----------- top players styles-----------  */
 
 .players{
     display: grid;
@@ -104,10 +115,11 @@ main, .footer-detail{
     font-weight: 400;
 }
 
-/* highlights styles  */
+/* -----------highlights styles-----------  */
 
 .highlights-container{
     margin-top: 165px;
+    margin-bottom: 125px;
     
 
 }
@@ -151,8 +163,76 @@ main, .footer-detail{
     height: 427px;
     width: 567px;
 }
+hr{
+    width: 1120px;
+    
+}
 
-/* footer styles  */
+/*--------------- fifa containers styles---------------  */
+
+.fifa-container h2{
+    color: lightsalmon;
+}
+
+.section-heading{
+    text-align: center;
+}
+.fifa-partners{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 400px;
+    grid-row-gap: 60px;
+}
+
+/* ---------------------------------------
+        favourite players styles
+----------------------------------------  */
+.favourite-player-container{
+    margin-top: 75px;
+    margin-bottom: 75px;
+}
+
+.favourite-player-container h1{
+    color: hotpink;
+}
+.favourite-player-container .player img{
+    height: 474px;
+    width: 330px;
+
+}
+
+.section-title{
+    text-align: center;
+}
+
+button{
+    font-size: 18px;
+    font-weight: 400;
+    color: pink;
+    background-color: #E02C6D;
+    padding: 10px 25px;
+    border: 1px solid gray;
+    border-radius: 8px;
+}
+
+.player p{
+    text-align: center;
+}
+button:hover{
+    cursor: pointer;
+}
+
+/* -------------------footer styles---------------  */
+footer{
+    margin-top: 50px;
+}
+
+.footer-detail{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #FFFFFF;
+}
 .footer-image img{
     width: 483.87px;
 }
@@ -168,5 +248,6 @@ main, .footer-detail{
 .copy-symbol{
     font-size: 18px;
     font-weight: 400;
+    color: gray;
 
 }
