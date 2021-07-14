@@ -11,7 +11,7 @@ body{
 header{
     background: #2D25A0;
     height: 677px;
-    width: 1440px;
+    width: 100%;
     margin-bottom: 70px;
 }
 header:hover img{
@@ -27,7 +27,7 @@ nav{
 }
 nav ul{
     display: flex;
-    margin-left: 90px;
+    margin-left: 45px;
 }
 
 nav ul li{
@@ -42,10 +42,12 @@ nav ul li{
     margin-right: 184px;
     margin-top: 42px;
 }
-
 .fa-sign-in-alt{
     margin-right: 10px;
 }
+
+
+
 
 /*--------- top banner styles ------------ */
 .top-banner{
@@ -54,14 +56,16 @@ nav ul li{
 }
 
 .top-banner-info{
-    margin-left: 156px;
+    margin-left: 120px;
 }
 .top-banner h1{
-    font-size: 64px;
+    font-size: 55px;
     font-weight: 700;
     color: #FFFFFF;
 
 }
+
+
 span{
     background-color: #E02C6D;
     color: #FFFFFF;
@@ -108,20 +112,18 @@ main{
     font-size: 28px;
     font-weight: 700;
 }
-
 .player-info{
     color: #6C6C6C;
     font-size: 16px;
     font-weight: 400;
 }
-
 /* -----------highlights styles-----------  */
 
 .highlights-container{
-    margin-top: 165px;
-    margin-bottom: 125px;
-    
-
+    margin-top: 100px;
+    margin-bottom: 100px;
+    box-shadow: 1px 1px 15px lightgray;
+    padding: 10px;
 }
 
 .highlights{
@@ -129,7 +131,6 @@ main{
     grid-template-columns: repeat(2, 1fr);
     grid-column-gap: 69px;
 }
-
 .highlights-detail{
     height: 427px;
     width: 466px;
@@ -149,9 +150,6 @@ main{
 .fa-arrow-right{
     padding-left: 5px;
 }
-    
-    
-
 .highlights-detail span{
     background-color: #E02C6D;
     color: white;
@@ -180,7 +178,7 @@ hr{
 .fifa-partners{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-column-gap: 400px;
+    grid-column-gap: 100px;
     grid-row-gap: 60px;
 }
 
@@ -196,7 +194,7 @@ hr{
     color: hotpink;
 }
 .favourite-player-container .player img{
-    height: 474px;
+    height: 400px;
     width: 330px;
 
 }
@@ -210,6 +208,7 @@ button{
     font-weight: 400;
     color: pink;
     background-color: #E02C6D;
+    padding-top: 0;
     padding: 10px 25px;
     border: 1px solid gray;
     border-radius: 8px;
@@ -251,3 +250,198 @@ footer{
     color: gray;
 
 }
+
+@media only screen and (max-width:668px) {
+    
+    header{
+        background: #2D25A0;
+        height: 740px;
+        width: 100%;
+        margin-bottom: 70px;
+    }
+
+    /*----- navigation styles------  */
+    nav{
+        display: flex;
+        flex-direction: column;
+        padding: 0px;
+    }
+    nav ul{
+        display: flex;
+        margin-left: 1px;
+    }
+
+    nav ul li{
+        list-style: none;
+        color: #FFFFFF;
+        font-size: 12px;
+        font-weight: 500;
+        padding: 0px;
+        margin-right: 8px;
+    }
+
+    .login span{
+        margin-right: 0px;
+        margin-top: 0px;
+    }
+    /*------ top banner styles-------  */
+
+    .top-banner{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .top-banner-info{
+        margin-left: 0px;
+        padding: 10px;
+    }
+    .top-banner h1{
+        font-size: 24px;
+        font-weight: 700;
+        color: #FFFFFF;
+    
+    }
+    .top-banner img{
+        width: 100%;
+        height: 438px;
+        margin-right: 0px;
+        margin-top: 30px;
+    }
+    /* ------top players styles --------- */
+    .players{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-row-gap: 27px;
+        text-align: center;
+    }
+
+    .player{
+        height: 474px;
+        width: 92%;
+        box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+        padding: 15px;
+    
+    }
+
+    .player-image img{
+        width: 85%;
+    }
+    .player-name{
+        color: #18191F;
+        font-size: 18px;
+        font-weight: 700;
+    }
+    /* -----------highlights styles-----------  */
+
+    .highlights{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        
+    }
+
+.highlights-detail{
+    height: 427px;
+    width: 90%;
+    padding-left: 0px;
+}
+.highlights-title{
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.highlights-info{
+    font-size: 16px;
+    font-weight: 400;
+    padding-bottom: 24px;
+    color: #6C6C6C;
+}
+.fa-arrow-right{
+    padding-left: 5px;
+}
+
+.highlights-detail span{
+    background-color: #E02C6D;
+    color: white;
+    padding: 5px 5px;
+   
+}
+
+.highlights img{
+    height: 427px;
+    width: 100%;
+}
+hr{
+    width: 100%;
+    
+}
+
+/*--------------- fifa containers styles---------------  */
+
+.fifa-container h2{
+    color: lightsalmon;
+}
+
+.section-heading{
+    text-align: center;
+}
+.fifa-partners{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-row-gap: 100px;
+}
+
+.favourite-player-container h1{
+    color: hotpink;
+}
+.favourite-player-container .player img{
+    height: 400px;
+    width: 100%;
+
+}
+/* -------footer styles ------ */
+
+.footer-image img{
+    width: 90%;
+}
+
+.footer-detail{
+    box-shadow: 1px 1px 10px lightgray;
+}
+
+
+.social-icon i{
+    width: 32px;
+    margin-left: 20px;
+    color: #6C6C6C;
+    
+}
+
+.copy-symbol{
+    font-size: 18px;
+    font-weight: 400;
+    color: gray;
+
+}
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+    
+
+
