@@ -1,13 +1,67 @@
-/* font family  */
+/* font */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
 
 /* common styles */
 body{
     font-family: 'Poppins', sans-serif;
-    background-color: #000000;
+    margin: 0;
 }
 
-main{
+header{
+    background: #2D25A0;
+    height: 677px;
+    width: 1440px;
+    margin-bottom: 70px;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav ul{
+    display: flex;
+    margin-left: 90px;
+}
+
+nav ul li{
+    list-style: none;
+    color: #FFFFFF;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 36px;
+}
+
+.login span{
+    margin-right: 184px;
+    margin-top: 42px;
+}
+.top-banner{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.top-banner-info{
+    margin-left: 156px;
+}
+.top-banner h1{
+    font-size: 64px;
+    font-weight: 700;
+    color: #FFFFFF;
+
+}
+span{
+    background-color: #E02C6D;
+    color: #FFFFFF;
+    padding: 10px 24px;
+}
+.top-banner img{
+    width: 556.01px;
+    height: 438px;
+    margin-right: 141px;
+}
+
+main, .footer-detail{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -33,6 +87,18 @@ main{
 
 .player-image img{
     width: 330px;
+}
+
+.player-name{
+    color: #18191F;
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.player-info{
+    color: #6C6C6C;
+    font-size: 16px;
+    font-weight: 400;
 }
 
 /* highlights styles  */
@@ -81,4 +147,23 @@ main{
 .highlights img{
     height: 427px;
     width: 567px;
+}
+
+/* footer styles  */
+.footer-image img{
+    width: 483.87px;
+}
+
+
+.social-icon i{
+    width: 32px;
+    margin-left: 14px;
+    color: #6C6C6C;
+    
+}
+
+.copy-symbol{
+    font-size: 18px;
+    font-weight: 400;
+
 }
